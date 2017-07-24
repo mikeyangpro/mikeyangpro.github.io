@@ -6,17 +6,27 @@
     <description>Recent content in R on Mike Quant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Jun 2017 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 21 Jul 2017 08:13:14 -0500</lastBuildDate>
     
 	<atom:link href="https://mikeyangpro.github.io/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Pattern Recognition</title>
-      <link>https://mikeyangpro.github.io/2017/06/21/pattern-recognition/</link>
-      <pubDate>Wed, 21 Jun 2017 21:13:14 -0500</pubDate>
+      <title>Interactive spacial data with Tidycensus and Leaflet</title>
+      <link>https://mikeyangpro.github.io/2017/07/21/interactive-spacial-data-with-tidycensus-and-leaflet/</link>
+      <pubDate>Fri, 21 Jul 2017 08:13:14 -0500</pubDate>
       
-      <guid>https://mikeyangpro.github.io/2017/06/21/pattern-recognition/</guid>
+      <guid>https://mikeyangpro.github.io/2017/07/21/interactive-spacial-data-with-tidycensus-and-leaflet/</guid>
+      <description>TitleText
+# https://juliasilge.com/blog/using-tidycensus/library(tidycensus)library(leaflet)library(stringr)library(sf)census_api_key(yourAPIhere) #Need to register API https://www.census.gov/data/developers/rent = &amp;#39;B25031_001&amp;#39;hval = &amp;#39;B25077_001&amp;#39;ilb = &amp;#39;C18120_002&amp;#39;ilbu = &amp;#39;C18120_006&amp;#39;inc= &amp;#39;B19013_001&amp;#39;age = &amp;#39;B01002_001&amp;#39;#function to plot census dataleafletcencus = function(censusdat,palette=&amp;#39;viridis&amp;#39;,title=&amp;#39;&amp;#39;,prefix=&amp;#39;&amp;#39;,suffix=&amp;#39;&amp;#39;){pal &amp;lt;- colorNumeric(palette = palette,domain = censusdat$estimate)censusdat %&amp;gt;%st_transform(crs = &amp;quot;+init=epsg:4326&amp;quot;) %&amp;gt;% leaflet(width = &amp;quot;80%&amp;quot;) %&amp;gt;%addProviderTiles(provider = &amp;quot;CartoDB.Positron&amp;quot;) %&amp;gt;%addPolygons(popup = ~ paste(censusdat$estimate),stroke = FALSE, smoothFactor=0, fillOpacity=0.</description>
+    </item>
+    
+    <item>
+      <title>Pattern Recognition</title>
+      <link>https://mikeyangpro.github.io/2017/07/05/pattern-recognition/</link>
+      <pubDate>Wed, 05 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mikeyangpro.github.io/2017/07/05/pattern-recognition/</guid>
       <description>R MarkdownWus up.
 rm(list=ls())library(quantmod)library(magrittr)library(&amp;#39;dygraphs&amp;#39;)#single equity here. could expand to a list of tickerseqty = &amp;#39;^GSPC&amp;#39;#start date/end date, will update end date to hist dates for backtestingsdate = &amp;#39;2010-01-01&amp;#39;; edate=Sys.Date()#Adj Daily Close Pricedata = getSymbols(eqty,from=sdate,to=edate,auto.assign = F)data = data[,-5]#change names from SPY.Open to Opennames(data)=gsub(paste(eqty,&amp;#39;\\.&amp;#39;,sep=&amp;#39;&amp;#39;),&amp;#39;&amp;#39;,names(data))#daily log return based on Adj Closeret = Ad(data)%&amp;gt;%log%&amp;gt;%diff%&amp;gt;%na.</description>
     </item>
