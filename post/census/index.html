@@ -10,15 +10,15 @@
 <meta property='og:title' content='Interactive spacial data with Tidycensus and Leaflet • Mike Yang'>
 <meta property='og:description' content='TitleText
 # https://juliasilge.com/blog/using-tidycensus/library(tidycensus)library(leaflet)library(stringr)library(sf)census_api_key(yourAPIhere) #Need to register API https://www.census.gov/data/developers/rent = &#39;B25031_001&#39;hval = &#39;B25077_001&#39;ilb = &#39;C18120_002&#39;ilbu = &#39;C18120_006&#39;inc= &#39;B19013_001&#39;age = &#39;B01002_001&#39;#function to plot census dataleafletcencus = function(censusdat,palette=&#39;viridis&#39;,title=&#39;&#39;,prefix=&#39;&#39;,suffix=&#39;&#39;){pal &lt;- colorNumeric(palette = palette,domain = censusdat$estimate)censusdat %&gt;%st_transform(crs = &quot;&#43;init=epsg:4326&quot;) %&gt;% leaflet(width = &quot;80%&quot;) %&gt;%addProviderTiles(provider = &quot;CartoDB.Positron&quot;) %&gt;%addPolygons(popup = ~ paste(censusdat$estimate),stroke = FALSE, smoothFactor=0, fillOpacity=0.'>
-<meta property='og:url' content='https://mikeyangpro.github.io/post/census/'>
+<meta property='og:url' content='/post/census/'>
 <meta property='og:site_name' content='Mike Quant'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post'><meta property='article:tag' content='R Markdown'><meta property='article:tag' content='plot'><meta property='article:tag' content='regression'><meta property='article:published_time' content='2017-07-21T00:00:00Z'/><meta property='article:modified_time' content='2017-07-21T00:00:00Z'/>
 
 <meta name="generator" content="Hugo 0.25.1" />
 
-  <base href='https://mikeyangpro.github.io/'>
+  <base href='../../'>
   <title>Interactive spacial data with Tidycensus and Leaflet • Mike Yang</title>
-  <link rel='canonical' href='https://mikeyangpro.github.io/post/census/'>
+  <link rel='canonical' href='../../post/census/'>
   <link href='' rel='alternate' type='application/rss+xml' title='Mike Quant' />
   <link rel='icon' href='../../favicon.ico'>
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700&subset=latin'>
@@ -43,7 +43,7 @@
     </li>
     
     <li>
-      <a href='https://mikeyangpro.github.io/'>Home</a>
+      <a href='https://www.linkedin.com/in/mikeyangpro/'>Profile</a>
     </li>
     
   </ul>
@@ -225,7 +225,7 @@ leafletcencus(NYIncome,palette = &#39;plasma&#39;,title=&#39;Median House Income
     
 <nav class='entry-nav'>
   <div class='entry-nav-links'><div class='prev-entry'>
-      <a href='https://mikeyangpro.github.io/post/dygraphtemplates/'>
+      <a href='../../post/dygraphtemplates/'>
         <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <line x1="20" y1="12" x2="4" y2="12"/>
@@ -235,7 +235,7 @@ leafletcencus(NYIncome,palette = &#39;plasma&#39;,title=&#39;Median House Income
  Previous</span>
         <span class='screen-reader'>Previous post: </span>dygraph template</a>
     </div><div class='next-entry'>
-      <a href='https://mikeyangpro.github.io/post/patternrecog/'>
+      <a href='../../post/patternrecog/'>
         <span class='screen-reader'>Next post: </span>Pattern Recognition<span aria-hidden='true'>Next <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <line x1="4" y1="12" x2="20" y2="12"/>

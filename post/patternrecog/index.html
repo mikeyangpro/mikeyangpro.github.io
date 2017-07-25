@@ -10,15 +10,15 @@ rm(list=ls())library(quantmod)library(magrittr)library(&#39;dygraphs&#39;)#s
 <meta property='og:title' content='Pattern Recognition • Mike Yang'>
 <meta property='og:description' content='R MarkdownWus up.
 rm(list=ls())library(quantmod)library(magrittr)library(&#39;dygraphs&#39;)#single equity here. could expand to a list of tickerseqty = &#39;^GSPC&#39;#start date/end date, will update end date to hist dates for backtestingsdate = &#39;2010-01-01&#39;; edate=Sys.Date()#Adj Daily Close Pricedata = getSymbols(eqty,from=sdate,to=edate,auto.assign = F)data = data[,-5]#change names from SPY.Open to Opennames(data)=gsub(paste(eqty,&#39;\\.&#39;,sep=&#39;&#39;),&#39;&#39;,names(data))#daily log return based on Adj Closeret = Ad(data)%&gt;%log%&gt;%diff%&gt;%na.'>
-<meta property='og:url' content='https://mikeyangpro.github.io/post/patternrecog/'>
+<meta property='og:url' content='/post/patternrecog/'>
 <meta property='og:site_name' content='Mike Quant'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post'><meta property='article:tag' content='R Markdown'><meta property='article:tag' content='plot'><meta property='article:tag' content='regression'><meta property='article:published_time' content='2017-07-25T00:00:00Z'/><meta property='article:modified_time' content='2017-07-25T00:00:00Z'/>
 
 <meta name="generator" content="Hugo 0.25.1" />
 
-  <base href='https://mikeyangpro.github.io/'>
+  <base href='../../'>
   <title>Pattern Recognition • Mike Yang</title>
-  <link rel='canonical' href='https://mikeyangpro.github.io/post/patternrecog/'>
+  <link rel='canonical' href='../../post/patternrecog/'>
   <link href='' rel='alternate' type='application/rss+xml' title='Mike Quant' />
   <link rel='icon' href='../../favicon.ico'>
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700&subset=latin'>
@@ -43,7 +43,7 @@ rm(list=ls())library(quantmod)library(magrittr)library(&#39;dygraphs&#39;)#s
     </li>
     
     <li>
-      <a href='https://mikeyangpro.github.io/'>Home</a>
+      <a href='https://www.linkedin.com/in/mikeyangpro/'>Profile</a>
     </li>
     
   </ul>
@@ -211,7 +211,7 @@ data[j:(j+lb+lf),]%&gt;%chart_Series(name=round(corr[j],3),theme =  mychartTheme
     
 <nav class='entry-nav'>
   <div class='entry-nav-links'><div class='prev-entry'>
-      <a href='https://mikeyangpro.github.io/post/census/'>
+      <a href='../../post/census/'>
         <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <line x1="20" y1="12" x2="4" y2="12"/>
